@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import './App.module.css';
-import Button from '../Button/Button';
+import React from 'react';
+import styles from './App.module.css';
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
+import Playlist from '../Playlist/Playlist';
 
 function App() {
-  const [data, setData] = useState('primary');
 
   return (
     <div className="App">
@@ -11,13 +12,12 @@ function App() {
         <h1>Jammming</h1>
       </header>
       <main>
-        <Button text='Submit' variant='primary' onClick={(e) => console.log(e)} />
-        {/* <SearchBar /> */}
-        {/* <SearchResults /> */}
-        {/* <Playlist /> */}
+        <SearchBar />
+        <SearchResults />
+        <Playlist />
       </main>
     </div>
   );
-}
+};
 
 export default App;

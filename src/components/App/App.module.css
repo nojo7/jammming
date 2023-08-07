@@ -12,8 +12,12 @@
   box-shadow: 0 -5px 8px 5px rgba(0,0,0,0.3);
 }
 
-.appHeader h1 {
-  font-size: 1.3rem;
+.appHeader h1, span {
+  font-size: 1.4rem;
+}
+
+.appHeader span {
+  color: #8a50c4;
 }
 
 .searchBar {

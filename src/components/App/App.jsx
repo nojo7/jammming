@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className={styles.app}>
       <header className={styles.appHeader}>
-        <h1>Jammming</h1>
+        <h1>Ja<span>mmm</span>ing</h1>
       </header>
       <main>
         <section className={styles.searchBar}>

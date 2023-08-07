@@ -1,20 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './App.module.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
 
-function App() {
+const App = () => {
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={styles.app}>
+      <header className={styles.appHeader}>
         <h1>Jammming</h1>
       </header>
       <main>
-        <SearchBar />
-        <SearchResults />
-        <Playlist />
+        <section className={styles.searchBar}>
+          <SearchBar />
+        </section>
+        <section className={styles.lists}>
+          <SearchResults />
+          <Playlist />
+        </section>
       </main>
     </div>
   );

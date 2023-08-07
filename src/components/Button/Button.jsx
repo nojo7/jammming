@@ -4,8 +4,22 @@ const Button = ({text, variant, onClick}) => {
 
   return (
     <>
-      {variant === 'primary' && <button onClick={onClick} type='submit' className={styles.primary}>{text}</button>}
-      {variant === 'secondary' && <button onClick={onClick} type='submit' className={styles.secondary}>{text}</button>}
+      {variant === 'searchBar' &&
+        <button 
+          onClick={onClick}
+          type='submit'
+          className={styles.searchBarButton}
+          >
+            {text}
+        </button>}
+      {variant === 'playlist' &&
+      <button 
+        onClick={onClick}
+        type='submit'
+        className={styles.playlistButton}
+        >
+          {text}
+      </button>}
     </>
   );
 }

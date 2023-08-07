@@ -7,7 +7,7 @@ const Playlist = () => {
 
     return (
         <div className={styles.playlist}>
-            <input className={styles.playlistName} type="text" placeholder='Name Your Playlist'/>
+            <input className={styles.playlistName} type="text" placeholder='Name Your Playlist...'/>
             <Tracklist />
             <div className={styles.playlistButton}>
                 <Button text='Save To Spotify' variant='playlist' />

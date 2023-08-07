@@ -2,8 +2,9 @@
   text-align: center;
   background-color: #8a50c4;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   padding: 12px 20px;
   border: solid #8a50c4;
   border-radius: 20rem;
@@ -21,16 +22,19 @@
 
 .playlistButton {
   text-align: center;
+  background:url('../../spotify.svg') no-repeat 10px center;
+  background-size: 2rem;
   background-color: #1BD760;
   color: #000;
-  font-size: 0.8rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  padding: 12px 20px;
+  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+  padding: 12px 20px 12px 40px;
   border: solid #1BD760;
   border-radius: 20rem;
   border-width: 1px;
   box-shadow: 0 0 8px 3px rgba(192, 197, 206, 0.2);
-  width: fit-content;
+  width: 14rem;
   margin-top: 3rem;
 }
 
